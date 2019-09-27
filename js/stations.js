@@ -144,6 +144,4 @@ const stations = [
 ];
 
 
-  /*  https://www.transitchicago.com/developers/ttdocs/#_Toc296199909  */
-
-  
+// https://www.transitchicago.com/developers/ttdocs/#_Toc296199909
