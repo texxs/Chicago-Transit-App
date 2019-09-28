@@ -11,7 +11,7 @@
   <script src="js/stations.js"></script>
   <script src="js/moment.js"></script>
   <script src="js/moment-timezone.js"></script>
-  <script src="chicago.js"></script>
+  <script src="js/chicago.js"></script>
 </head>
   
   
