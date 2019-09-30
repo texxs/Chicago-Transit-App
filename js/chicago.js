@@ -15,9 +15,29 @@ getStations = function(){
     }
     out += "</select>";
     document.getElementById('stationSched').innerHTML = out;
-    document.getElementById('stationSelect').addEventListener('change', function()
+    document.getElementById('stationSelect').addEventListener('change', function(){
     url += "access.php/?station=" +station;
     geTrains(station);
     url = "";    
   });
+}
+
+getTrains = function(station)  {
+  fetch(url)
+    .then((resp) =>resp.json())
+    .then(function(data) {
+      // console.log(data);
+      getTrainInfo(data);
+    }).then(function(){
+      console.log(out);
+      document.getElementById('trainInfo').innerhtml = "";
+      out="";
+    const trainArray = data.ctatt.eta;
+    console.log(trainArray);
+    })
+}
+
+getTrainInfo = function(data) {
+    document.getElementById('trainInfo').innerHTML = "";
+    out = "";
 }
